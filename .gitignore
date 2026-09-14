@@ -1,0 +1,11 @@
+# Local review artifacts
+.docx-review/
+.photo-review/
+
+# Keep original field photos local; publish only curated Stitch selections
+assets/field-photos/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
