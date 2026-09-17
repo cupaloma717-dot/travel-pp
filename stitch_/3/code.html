@@ -1,732 +1,214 @@
-<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-<link href="../shared.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary":"#3b6750","on-secondary":"#ffffff","tertiary":"#154f6b","on-secondary-container":"#416d56","primary-fixed-dim":"#ffb695","outline-variant":"#d7c2ba","on-secondary-fixed":"#002113","primary-fixed":"#ffdbcc","on-secondary-fixed-variant":"#234f3a","inverse-surface":"#33302d","on-error":"#ffffff","surface-dim":"#e0d9d4","on-error-container":"#93000a","surface-container-low":"#faf2ed","surface-container":"#f4ece7","background":"#fff8f4","on-surface":"#1e1b18","on-primary-container":"#ffd5c3","primary":"#703c23","secondary-container":"#bdeed0","surface":"#fff8f4","on-tertiary-fixed-variant":"#104c68","on-tertiary":"#ffffff","tertiary-fixed":"#c6e7ff","secondary-fixed":"#bdeed0","on-background":"#1e1b18","on-primary-fixed-variant":"#6c3920","surface-tint":"#885035","primary-container":"#8c5338","tertiary-container":"#336785","inverse-on-surface":"#f7efea","surface-bright":"#fff8f4","on-tertiary-fixed":"#001e2d","on-primary-fixed":"#351000","on-tertiary-container":"#bbe3ff","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#a2d1b5","outline":"#85736c","surface-container-high":"#eee7e2","inverse-primary":"#ffb695","error-container":"#ffdad6","tertiary-fixed-dim":"#9bcdee","on-primary":"#ffffff","surface-variant":"#e8e1dc","on-surface-variant":"#52443d","surface-container-highest":"#e8e1dc","error":"#ba1a1a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter":"1rem","margin-desktop":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2.25rem","margin":"1.25rem","space-md":"1rem","gutter-desktop":"1.5rem"},"fontFamily":{"body-lg":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-xl-mobile":["30px",{"lineHeight":"40px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"34px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"52px","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"42px","fontWeight":"700"}],"title-lg":["18px",{"lineHeight":"26px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","fontWeight":"500"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1080px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="flex flex-col"><a class="flex items-baseline gap-space-xs" data-path="overview" href="#"><span class="font-title-lg text-title-lg text-primary tracking-tight">요즘 이천 하루만에</span><span class="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span></a><span class="font-label-sm text-label-sm text-on-surface-variant tracking-normal hidden md:inline">취향과 이동 부담 없는 뚜벅이 하루 코스</span></div></div><nav class="hidden md:flex items-center p-space-xs rounded-lg bg-surface-container" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-[0_2px_8px_-2px_rgba(93,55,36,0.12)]"><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="overview" href="#">서비스 소개</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="courses-compare" href="#">3대 코스 비교</a><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary font-bold rounded-lg shadow-[0_2px_8px_-2px_rgba(93,55,36,0.12)]" data-path="itinerary-timeline" href="#">타임라인 일정</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="spot-detail" href="#">장소 상세</a></nav><div class="flex items-center gap-space-sm"><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary font-medium">현장답사 아카이브 (2024)</span></div><button aria-label="공유하기" class="w-9 h-9 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="max-w-[1080px] mx-auto min-h-[calc(100vh-5rem)]"><div class="flex flex-col w-full">
-<!-- Top Course Hero & Editorial Header -->
-<section class="relative w-full overflow-hidden rounded-xl bg-surface-container-low shadow-sm">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
-<!-- Course Hero Image Banner -->
-<div class="lg:col-span-7 relative min-h-[340px] sm:min-h-[420px] overflow-hidden">
-<img alt="설봉호수의 푸른 물결과 초록 숲" class="w-full h-full object-cover object-center" src="../../assets/stitch-selection/03-course-02/seolbong-lake.jpg">
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-<div class="absolute top-4 left-4 flex flex-wrap gap-2">
-<span class="px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-primary font-label-md text-label-md">코스 02</span>
-<span class="px-3 py-1 rounded-full bg-secondary-container/90 backdrop-blur-md text-on-secondary-fixed-variant font-label-md text-label-md">호수 산책 &amp; 자연식 쉼</span>
-</div>
-<div class="absolute bottom-6 left-6 right-6 text-on-primary">
-<p class="font-label-sm text-label-sm tracking-wider uppercase opacity-90 mb-1">Pedestrian Day Trip Archiving</p>
-<h1 class="font-headline-lg text-headline-lg tracking-tight">코스 2 · 이천을 알차게</h1>
-<p class="font-body-md text-body-md opacity-90 mt-1">설봉호수의 윤슬부터 자연식 한상, 로컬 베이커리까지 여유로운 도보 동선</p>
-</div>
-</div>
-<!-- Key Course Metrics Card -->
-<div class="lg:col-span-5 p-6 sm:p-8 flex flex-col justify-between bg-surface-container">
-<div>
-<div class="flex items-center justify-between mb-4">
-<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Course Overview</span>
-<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
-<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-              20대 뚜벅이 검증 완료
-            </span>
-</div>
-<h2 class="font-headline-md text-headline-md text-on-surface mb-2">동선 요약 &amp; 예상 경비</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">
-            대중교통 환승 스트레스 없이 택시와 짧은 도보를 조합해 느긋하게 이천의 정취를 누리는 일정입니다.
-          </p>
-<!-- Metrics Bento Grid -->
-<div class="metric-grid grid grid-cols-3 gap-2.5 mb-5">
-<div class="p-3.5 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col">
-<span class="font-label-sm text-label-sm text-on-surface-variant">총 체류소요</span>
-<span class="font-title-lg text-title-lg text-primary mt-1 font-bold">9시간 30분</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant/80 mt-0.5">09:30 ~ 19:00</span>
-</div>
-<div class="p-3.5 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col">
-<span class="font-label-sm text-label-sm text-on-surface-variant">예상 택시비</span>
-<span class="font-title-lg text-title-lg text-primary mt-1 font-bold">~2.1만</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant/80 mt-0.5">19,400원~</span>
-</div>
-<div class="p-3.5 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col">
-<span class="font-label-sm text-label-sm text-on-surface-variant">총 이동거리</span>
-<span class="font-title-lg text-title-lg text-primary mt-1 font-bold">9.5 km</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant/80 mt-0.5">환승 도보 포함</span>
-</div>
-</div>
-</div>
-<div class="p-3 rounded-lg bg-surface-container-high/60 flex items-start gap-2.5">
-<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">info</span>
-<p class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed">
-            교통 상황과 호출 방식에 따라 달라질 수 있어요. 주말 피크타임(11:30~13:30)에는 카카오T 및 지역 호출 앱을 미리 확인하세요.
-          </p>
-</div>
-</div>
-</div>
-</section>
-<!-- Main Timeline Itinerary Flow -->
-<section class="mt-12 sm:mt-16">
-<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-3">
-<div>
-<div class="flex items-center gap-2 mb-1">
-<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Itinerary Path</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">시간순 이동 타임라인</h2>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
-<span class="material-symbols-outlined text-[18px] text-secondary">alt_route</span>
-<span class="">구간별 택시 / 버스 경로를 탭하여 비교해보세요</span>
-</div>
-</div>
-<!-- Timeline Root Container -->
-<div class="relative pl-6 sm:pl-10" id="timeline-root">
-<!-- Vertical Connecting Line -->
-<div class="absolute left-3 sm:left-4.5 top-5 bottom-6 w-0.5 bg-outline-variant/50"></div>
-<!-- NODE 1: Arrival -->
-<div class="relative mb-6">
-<div class="absolute -left-6 sm:-left-10 top-1.5 w-6 h-6 rounded-full bg-primary flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-on-primary text-[15px]">train</span>
-</div>
-<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm">
-<div class="flex flex-wrap items-center justify-between gap-2">
-<div class="flex items-center gap-2.5">
-<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-md text-label-md font-bold">09:30</span>
-<h3 class="font-title-lg text-title-lg text-on-surface font-bold">이천역 또는 이천종합터미널 도착</h3>
-</div>
-<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant">출발 거점</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2">
-            경강선 이천역(판교에서 33분) 혹은 고속·시외버스터미널 하차 후 하루 일정을 시작합니다.
-          </p>
-</div>
-</div>
-<!-- TRANSIT SEGMENT 1 -->
-<div class="relative mb-8 my-4" data-segment="1">
-<div class="bg-surface-container-low p-4 sm:p-5 rounded-xl shadow-sm">
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3">
-<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
-<span class="material-symbols-outlined text-tertiary text-[20px]">swap_calls</span>
-<span class="font-semibold">구간 이동 1</span>
-<span class="text-on-surface-variant">이천역/터미널 → 설봉공원</span>
-</div>
-<!-- Segment Mode Switcher -->
-<div class="inline-flex p-1 rounded-lg bg-surface-container-high" role="tablist">
-<button class="mode-tab-btn active px-3.5 py-1 rounded-md font-label-md text-label-md transition-all bg-surface-container-lowest text-primary shadow-sm" data-tab="taxi" data-target="seg1" type="button">
-                택시 탭
-              </button>
-<button class="mode-tab-btn px-3.5 py-1 rounded-md font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface" data-tab="bus" data-target="seg1" type="button">
-                버스 탭
-              </button>
-</div>
-</div>
-<!-- Taxi View -->
-<div class="mode-content flex flex-wrap items-center justify-between pt-3 gap-4" id="seg1-taxi">
-<div class="flex items-center gap-4">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
-<span class="material-symbols-outlined">local_taxi</span>
-</div>
-<div>
-<p class="font-body-md text-body-md text-on-surface font-semibold">약 6분 소요 · 2.5km</p>
-<p class="font-label-sm text-label-sm text-on-surface-variant">신호 대기 적은 외곽우회로 기준</p>
-</div>
-</div>
-<div class="text-right">
-<span class="font-label-sm text-label-sm text-on-surface-variant">예상 요금</span>
-<p class="font-title-lg text-title-lg text-primary font-bold">약 5,400원</p>
-</div>
-</div>
-<!-- Bus View (hidden by default) -->
-<div class="mode-content hidden flex flex-wrap items-center justify-between pt-3 gap-4" id="seg1-bus">
-<div class="flex items-center gap-4">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
-<span class="material-symbols-outlined">directions_bus</span>
-</div>
-<div>
-<p class="font-body-md text-body-md text-on-surface font-semibold">약 32분 소요</p>
-<p class="font-label-sm text-label-sm text-on-surface-variant">도보 3분 → 8번/24번 시내버스 8분 → 설봉공원 정류장 하차 후 도보 20분</p>
-</div>
-</div>
-<div class="text-right">
-<span class="font-label-sm text-label-sm text-on-surface-variant">교통카드 요금</span>
-<p class="font-title-lg text-title-lg text-tertiary font-bold">1,450원</p>
-</div>
-</div>
-</div>
-</div>
-<!-- NODE 2: Seolbong Park -->
-<div class="relative mb-6">
-<div class="absolute -left-6 sm:-left-10 top-2 w-6 h-6 rounded-full bg-secondary flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-on-secondary text-[15px]">park</span>
-</div>
-<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
-<div class="flex items-center gap-3">
-<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-md text-label-md font-bold">10:00 ~ 12:30</span>
-<h3 class="font-headline-md text-headline-md text-on-surface">설봉공원</h3>
-</div>
-<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container px-2.5 py-1 rounded">
-<span class="material-symbols-outlined text-[16px]">schedule</span>
-              체류 2시간 30분
-            </span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant mb-4">
-            이천의 대표 명소 설봉호수를 따라 정갈하게 깔린 수변 데크길을 걷습니다. 호수 주변 월전미술관과 시립박물관까지 둘러보며 고요한 오전 휴식을 누립니다.
-          </p><div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4"><div class="relative rounded-xl overflow-hidden group"><img alt="설봉호수 수변 산책 데크길" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIm9HROFb32KMY9QAXhz2pSdZ47GeJ3pBj7lUxFFuZ3TxZB1olQ6VIk4og-DJP0alMYgwd1GpGEcbVvDKodB7h-hkCrINdH9q3CdPBaFKSw8XlTzi9q4tBLTzFWVKrqIRomFCARTzuwsdTWk__40OoCorKGZ7vpVFPtdKwz2m9FixDZKRc3MFi4hS0n-trpfRHfBx8KuQ3gUCT0jbAq2APcIpXeYUaIys3XRyP2lS4FDa5SMpj6S0j6IE8c5_7boJfsG8"><div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div><span class="absolute bottom-2.5 left-3 text-on-primary font-label-sm text-label-sm font-medium drop-shadow-sm flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">photo_camera</span>설봉호수 수변 산책 데크길</span></div><div class="relative rounded-xl overflow-hidden group"><img alt="이천시립 월전미술관 전경" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANHjpgQIgcMq3MGAOFVwB4L9wVWFPZP8d52PSXoOoAkUax6I9cN3IJUHo8sPVfo9mQDhpd3CoxAjWAmU1gfeIyWQq-MFq80_cxVFQh-XmZTw4cucAFsY4OFUJ-deQX9OenwzjeujIc6QLoSHywebi62i12wcRuZ5Tkmap3ez1Ij8izo5JKHZy-of41P2RDr5bVcbzDvF3EREP-qW7IddJZYOnhxN-C7kDKjPxQRyUX0_NpDTqUyJ1e5p_SYEL1Rm5S84w"><div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div><span class="absolute bottom-2.5 left-3 text-on-primary font-label-sm text-label-sm font-medium drop-shadow-sm flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">photo_camera</span>월전미술관 외경 및 정원</span></div></div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-<div class="p-3 rounded-lg bg-surface-container flex items-start gap-2.5">
-<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">hiking</span>
-<div>
-<h4 class="font-label-md text-label-md text-on-surface font-semibold">호수 산책로 둘레길</h4>
-<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">약 1.5km 평지 순환 코스로 호수 위 연잎과 윤슬 감상</p>
-</div>
-</div>
-<div class="p-3 rounded-lg bg-surface-container flex items-start gap-2.5">
-<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">museum</span>
-<div>
-<h4 class="font-label-md text-label-md text-on-surface font-semibold">이천시립 월전미술관</h4>
-<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">한국화 거장 월전 장우성 선생의 기증 작품 및 정원 조망</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- TRANSIT SEGMENT 2 -->
-<div class="relative mb-8 my-4" data-segment="2">
-<div class="bg-surface-container-low p-4 sm:p-5 rounded-xl shadow-sm">
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3">
-<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
-<span class="material-symbols-outlined text-tertiary text-[20px]">swap_calls</span>
-<span class="font-semibold">구간 이동 2</span>
-<span class="text-on-surface-variant">설봉공원 → 초원산방</span>
-</div>
-<!-- Segment Mode Switcher -->
-<div class="inline-flex p-1 rounded-lg bg-surface-container-high" role="tablist">
-<button class="mode-tab-btn active px-3.5 py-1 rounded-md font-label-md text-label-md transition-all bg-surface-container-lowest text-primary shadow-sm" data-tab="taxi" data-target="seg2" type="button">
-                택시 탭
-              </button>
-<button class="mode-tab-btn px-3.5 py-1 rounded-md font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface" data-tab="bus" data-target="seg2" type="button">
-                버스 탭
-              </button>
-</div>
-</div>
-<!-- Taxi View -->
-<div class="mode-content flex flex-wrap items-center justify-between pt-3 gap-4" id="seg2-taxi">
-<div class="flex items-center gap-4">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
-<span class="material-symbols-outlined">local_taxi</span>
-</div>
-<div>
-<p class="font-body-md text-body-md text-on-surface font-semibold">약 12분 소요 · 4.8km</p>
-<p class="font-label-sm text-label-sm text-on-surface-variant">설봉공원 주차장 정문 호출 기준</p>
-</div>
-</div>
-<div class="text-right">
-<span class="font-label-sm text-label-sm text-on-surface-variant">예상 요금</span>
-<p class="font-title-lg text-title-lg text-primary font-bold">약 9,000원</p>
-</div>
-</div>
-<!-- Bus View -->
-<div class="mode-content hidden flex flex-wrap items-center justify-between pt-3 gap-4" id="seg2-bus">
-<div class="flex items-center gap-4">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
-<span class="material-symbols-outlined">directions_bus</span>
-</div>
-<div>
-<p class="font-body-md text-body-md text-on-surface font-semibold">약 31분 소요</p>
-<p class="font-label-sm text-label-sm text-on-surface-variant">도보 14분 → 버스 10분 → 도보 5분 (배차간격 약 30~40분)</p>
-</div>
-</div>
-<div class="text-right">
-<span class="font-label-sm text-label-sm text-on-surface-variant">교통카드 요금</span>
-<p class="font-title-lg text-title-lg text-tertiary font-bold">1,450원</p>
-</div>
-</div>
-</div>
-</div>
-<!-- NODE 3: Chowon Sanbang -->
-<div class="relative mb-6">
-<div class="absolute -left-6 sm:-left-10 top-2 w-6 h-6 rounded-full bg-primary-container flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-on-primary text-[15px]">restaurant</span>
-</div>
-<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
-<div class="flex items-center gap-3">
-<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-md text-label-md font-bold">13:40 ~ 16:00</span>
-<h3 class="font-headline-md text-headline-md text-on-surface">초원산방</h3>
-</div>
-<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary bg-surface-container px-2.5 py-1 rounded">
-<span class="material-symbols-outlined text-[16px]">schedule</span>
-              체류 약 2시간 20분
-            </span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant mb-4">
-            정갈한 자연식 밥상과 함께 속을 편안히 채우는 점심 식사. 이천 쌀밥의 구수한 맛과 제철 채소 반찬들이 소담하게 차려져 도보 여행자의 피로를 씻어줍니다.
-          </p><div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4"><div class="relative rounded-xl overflow-hidden group"><img alt="정갈한 숯불구이 &amp; 반찬 한상" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbr4VHIKgOTgd0PI0oW94eOedCFPfSJ6snwSAJKjcdGYWL8_r3_qGGDXbu5tDqaXQz4-pkyjgdU0EzCy2ae_OimiF5FvgGYv5Yxu445pew0WHdgvhkszNemMqJkE-JIMdrsWh5fWDzT1bklXpYlfCacRHoOOre4d61HukNHlKNf6K8n5ceTYIkbxANFBTCiVUSYVFin6bav0t7-GFojrsymZNoUmA2d2duuha4Xb0g6yJhFsfvk5U0TCVzSViM8CeY6Ic"><div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div><span class="absolute bottom-2.5 left-3 text-on-primary font-label-sm text-label-sm font-medium drop-shadow-sm flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">photo_camera</span>정갈한 숯불구이 &amp; 반찬 한상</span></div><div class="relative rounded-xl overflow-hidden group"><img alt="운치 있는 토속적 내부 분위기" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOO4lfkukkdXNxA5sUW-CY7kHzLShWliJuF07ApnA-GmIWTVDkutErx439DEdRh11ShlZA7PzCztzvpKy-Z0SxD-1BsccwtVZepcnXpnWQuDR0-FhaRFx7lKdpug3RXkz7cYv290Dj1xm0QF8bPk9sJhzK41TA6jGOgFNRgnCUIKiFQlUKxleAI1Len-qBhgFgEhhGNgJBJ9KVm4U_eHMes91gkZ4UI22wAXgSC7S_rx42aSRCKvmS6CG9zoRK_xWu-Pk"><div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div><span class="absolute bottom-2.5 left-3 text-on-primary font-label-sm text-label-sm font-medium drop-shadow-sm flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">photo_camera</span>운치 있는 토속적 내부 분위기</span></div></div>
-<div class="p-3.5 rounded-lg bg-surface-container-low flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary text-[20px]">spa</span>
-<div class="font-label-sm text-label-sm text-on-surface-variant">
-<span class="font-semibold text-on-surface">도보 팁:</span> 
-              식사 후 가벼운 소화 산책 겸 카페까지 도보로 10분 이내 이동이 가능한 평탄한 마을길입니다.
-            </div>
-</div>
-</div>
-</div>
-<!-- TRANSIT SEGMENT 3 (Walking Only) -->
-<div class="relative mb-8 my-4">
-<div class="bg-surface-container-low p-4 sm:p-5 rounded-xl shadow-sm">
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2">
-<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
-<span class="material-symbols-outlined text-secondary text-[20px]">directions_walk</span>
-<span class="font-semibold">구간 이동 3</span>
-<span class="text-on-surface-variant">초원산방 → 베이커리 을를</span>
-</div>
-<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm">
-              도보 추천 구간
-            </span>
-</div>
-<div class="flex items-center justify-between pt-2">
-<div>
-<p class="font-body-md text-body-md text-on-surface font-semibold">도보 약 8분 · 379m</p>
-<p class="font-label-sm text-label-sm text-on-surface-variant">한적한 돌담과 들꽃이 피어 있는 가벼운 마을 산책로</p>
-</div>
-<div class="text-right">
-<span class="font-label-sm text-label-sm text-on-surface-variant">이동 비용</span>
-<p class="font-title-lg text-title-lg text-secondary font-bold">0원</p>
-</div>
-</div>
-</div>
-</div>
-<!-- NODE 4: Bakery Euleul -->
-<div class="relative mb-6">
-<div class="absolute -left-6 sm:-left-10 top-2 w-6 h-6 rounded-full bg-tertiary flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-on-tertiary text-[15px]">bakery_dining</span>
-</div>
-<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
-<div class="flex items-center gap-3">
-<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-bold">16:10 ~ 18:00</span>
-<h3 class="font-headline-md text-headline-md text-on-surface">베이커리 을를</h3>
-</div>
-<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-surface-container px-2.5 py-1 rounded">
-<span class="material-symbols-outlined text-[16px]">schedule</span>
-              체류 약 1시간 50분
-            </span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant mb-4">
-            모던하고 감각적인 건축 공간 속에서 즐기는 시그니처 쌀 베이커리와 스페셜티 커피. 오후의 부드러운 볕이 드는 통창 테이블에서 여정의 기록을 정리하기 좋습니다.
-          </p>
-<div class="p-3.5 rounded-lg bg-surface-container flex flex-wrap gap-4 text-on-surface font-label-md text-label-md">
-<div class="flex items-center gap-1.5">
-<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-<span class="">시그니처 쌀 소금빵 &amp; 페이스트리</span>
-</div>
-<div class="flex items-center gap-1.5">
-<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-<span class="">좌석 간격 넓고 콘센트 완비</span>
-</div>
-</div>
-</div>
-</div>
-<!-- TRANSIT SEGMENT 4 -->
-<div class="relative mb-8 my-4" data-segment="4">
-<div class="bg-surface-container-low p-4 sm:p-5 rounded-xl shadow-sm">
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3">
-<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
-<span class="material-symbols-outlined text-tertiary text-[20px]">swap_calls</span>
-<span class="font-semibold">구간 이동 4</span>
-<span class="text-on-surface-variant">베이커리 을를 → 이천역 또는 터미널</span>
-</div>
-<!-- Segment Mode Switcher -->
-<div class="inline-flex p-1 rounded-lg bg-surface-container-high" role="tablist">
-<button class="mode-tab-btn active px-3.5 py-1 rounded-md font-label-md text-label-md transition-all bg-surface-container-lowest text-primary shadow-sm" data-tab="taxi" data-target="seg4" type="button">
-                택시 탭
-              </button>
-<button class="mode-tab-btn px-3.5 py-1 rounded-md font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface" data-tab="bus" data-target="seg4" type="button">
-                도보/버스 탭
-              </button>
-</div>
-</div>
-<!-- Taxi View -->
-<div class="mode-content flex flex-wrap items-center justify-between pt-3 gap-4" id="seg4-taxi">
-<div class="flex items-center gap-4">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
-<span class="material-symbols-outlined">local_taxi</span>
-</div>
-<div>
-<p class="font-body-md text-body-md text-on-surface font-semibold">약 6~9분 소요 · 1.9km</p>
-<p class="font-label-sm text-label-sm text-on-surface-variant">퇴근길 이전 빠른 이동 가능</p>
-</div>
-</div>
-<div class="text-right">
-<span class="font-label-sm text-label-sm text-on-surface-variant">예상 요금</span>
-<p class="font-title-lg text-title-lg text-primary font-bold">5,000 ~ 7,000원</p>
-</div>
-</div>
-<!-- Bus/Walk View -->
-<div class="mode-content hidden flex flex-wrap items-center justify-between pt-3 gap-4" id="seg4-bus">
-<div class="flex items-center gap-4">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
-<span class="material-symbols-outlined">directions_bus</span>
-</div>
-<div>
-<p class="font-body-md text-body-md text-on-surface font-semibold">도보 약 29분 또는 버스 약 26분</p>
-<p class="font-label-sm text-label-sm text-on-surface-variant">도보 3분 → 버스 18분 → 도보 3분 (배차간격 약 20~30분)</p>
-</div>
-</div>
-<div class="text-right">
-<span class="font-label-sm text-label-sm text-on-surface-variant">교통카드 요금</span>
-<p class="font-title-lg text-title-lg text-tertiary font-bold">1,450원</p>
-</div>
-</div>
-</div>
-</div>
-<!-- NODE 5: Homeward Journey -->
-<div class="relative">
-<div class="absolute -left-6 sm:-left-10 top-2 w-6 h-6 rounded-full bg-primary flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-on-primary text-[15px]">home</span>
-</div>
-<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
-<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-<div class="flex items-center gap-3">
-<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-md text-label-md font-bold">18:30 ~ 19:00</span>
-<h3 class="font-headline-md text-headline-md text-on-surface">이천역 또는 터미널 도착 &amp; 귀가</h3>
-</div>
-<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed-variant font-medium">당일치기 완주</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant">
-            경강선 전철이나 서울행 광역·고속버스를 타고 여유롭게 귀가합니다. 짐이 늘었다면 역내 물품보관함 또는 택시를 이용해 몸을 가볍게 유지하세요.
-          </p>
-</div>
-</div>
-</div>
-</section>
-<!-- Bottom Around Exploration Module -->
-<section class="mt-10 sm:mt-14 bg-surface-container-low rounded-[28px] p-6 sm:p-10">
-<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
-<div>
-<div class="flex items-center gap-2 mb-1">
-<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Local Curation</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">이 코스 주변에서 더 둘러보기</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mt-1">설봉공원 및 베이커리 주변에서 가볍게 곁들일 수 있는 로컬 스팟</p>
-</div>
-<!-- Filter Tabs -->
-<div class="inline-flex p-1 rounded-xl bg-surface-container" role="tablist">
-<button class="explore-tab-btn active px-4 py-1.5 rounded-lg font-label-md text-label-md transition-all bg-surface-container-lowest text-primary shadow-sm" data-category="cafe" type="button">
-          카페
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>2코스 일정 · 이천을 알차게 | 요즘 이천 하루만에</title>
+  <meta content="설봉공원, 이천시립월전미술관, 초원산방과 베이커리을를 잇는 이천 당일치기 2코스 일정입니다." name="description">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link href="../shared.css" rel="stylesheet">
+  <link href="../timeline-detail.css" rel="stylesheet">
+</head>
+<body class="course-theme-2">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../1/code.html">
+        <strong>요즘 이천 하루만에</strong>
+        <small>취향과 이동 부담 없는 뚜벅이 하루 코스</small>
+      </a>
+      <nav aria-label="주요 메뉴" class="top-nav">
+        <a href="../1/code.html">서비스 소개</a>
+        <a href="../2/code.html">3대 코스 비교</a>
+        <a aria-current="page" href="#timeline">타임라인 일정</a>
+        <a href="../4_course_2/code.html">장소 상세</a>
+      </nav>
+      <div class="header-actions">
+        <span class="archive-badge">현장답사 아카이브 (2024)</span>
+        <button aria-label="2코스 일정 공유하기" class="icon-button" data-share type="button">
+          <span aria-hidden="true" class="material-symbols-outlined">share</span>
         </button>
-<button class="explore-tab-btn px-4 py-1.5 rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface" data-category="restaurant" type="button">
-          식당
-        </button>
-<button class="explore-tab-btn px-4 py-1.5 rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface" data-category="stay" type="button">
-          숙소 (당일치기 이후 참고)
-        </button>
-</div>
-</div>
-<!-- Category Hint Callout for Stay -->
-<div class="hidden mb-6 p-4 rounded-xl bg-surface-container-high/60 flex items-start gap-3" id="stay-notice">
-<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">bed</span>
-<div>
-<h4 class="font-title-lg text-title-lg text-on-surface">하룻밤 더 머물며 쉬어가고 싶을 때</h4>
-<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
-          본 코스는 당일치기 전용이나, 도자기 빚기와 온천욕을 더해 1박 2일로 확장하고 싶은 분들을 위해 정갈한 로컬 숙소를 큐레이션했습니다.
-        </p>
-</div>
-</div>
-<!-- Grid Cards -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="explore-grid">
-<!-- CARD 1: CAFE -->
-<div class="explore-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow" data-category="cafe">
-<div>
-<div class="relative h-48 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A warm, sunlit ceramic cafe interior in Icheon Korea, minimalist wooden furniture, delicate pottery cups on table, peaceful morning light, aesthetic lifestyle travel photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe2HNUBxymrO45MYal4Ihi4xYF7ZV04Hsazx9CRlLyp4lBgzCLJgg9AtUV6XywsT9R7jDWd90reM0jhN2oJhlbv3bnclc9DuJMxypBkN-3i5ge6tXUWSeDvfmbIqToVLTcOmJ9sRGt4ZZ9wsW__5sJakVwgE85YqopF3GoCSCPBGmkIbz1uHJ-WcozBaZfAN_gECmrdBBrkEjnuFFExgvemLi6RNsj3vfdjwW95S1yEr8H5Aqb8CFk4w">
-<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-md font-label-sm text-label-sm text-primary font-semibold">
-              설봉공원 도보 5분
-            </div>
-</div>
-<div class="p-5">
-<div class="flex items-center gap-2 mb-1.5">
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-primary">로스터리</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">경기 이천시 경충대로</span>
-</div>
-<h3 class="font-title-lg text-title-lg text-on-surface font-bold">티하우스 에덴 이천점</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2 line-clamp-2">
-              유럽식 홍차와 정갈한 스콘을 즐길 수 있는 글라스하우스 정원형 카페.
-            </p>
-</div>
-</div>
-<div class="p-5 pt-0 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
-<span class="">코스 내 이동시간: 도보 7분</span>
-<span class="text-primary font-semibold">오후 20:00 마감</span>
-</div>
-</div>
-<!-- CARD 2: CAFE -->
-<div class="explore-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow" data-category="cafe">
-<div>
-<div class="relative h-48 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern artisanal bakery interior with large glass windows overlooking a serene pine forest, fresh sourdough loaves on linen cloth, clean architectural design in warm stone tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACRXWUBriOeXDpmlePYVzsUP1IVetRCo9GWoB0CzNQEpnECP1hNsFfKAhWVet3T__FQ3UV40FIcG8qTTdUOxX1r9nCQ-ZbSvVNzSvR3Z5uP1L3CGMkWwvJRbWN2IDA-dugIQ4DlMcVKx31kcok7A2n7fL-scxNCfrS3x7TGovs3tHHSxiedCkT1eBkMzop7whHZSxmaUUTvXA-M3IaYZo_KPFzR0uk2Dh5Md9t2HiQIGCUmEgIacosKw">
-<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-md font-label-sm text-label-sm text-primary font-semibold">
-              을를 기준 도보 12분
-            </div>
-</div>
-<div class="p-5">
-<div class="flex items-center gap-2 mb-1.5">
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-primary">디저트 랩</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">경기 이천시 관고동</span>
-</div>
-<h3 class="font-title-lg text-title-lg text-on-surface font-bold">카페 륀느</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2 line-clamp-2">
-              직접 구운 무화과 휘낭시에와 쑥 라떼가 인상적인 아늑한 감성 공간.
-            </p>
-</div>
-</div>
-<div class="p-5 pt-0 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
-<span class="">코스 내 이동시간: 도보 12분</span>
-<span class="text-primary font-semibold">오후 21:00 마감</span>
-</div>
-</div>
-<!-- CARD 3: CAFE -->
-<div class="explore-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow" data-category="cafe">
-<div>
-<div class="relative h-48 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Traditional Korean style tea room with warm wooden beams, white porcelain teaware, steamed hot tea aroma, overlooking a quiet courtyard garden." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlKcS3EK7h1uWHRRskTSil3AmNlS5FSkiB9-D2if1itU6e2OPnXRCEjJejJrAmBiXB9ElPUseOY1vwFsRdLQqcQdIT4Gc6IyibNnXZWU4NIyJGew8cDuoh9esSiSTcg9AhndhrP0QvKZhHa9bZQCOIjZRPqDfbaqyAAIj8vMiIPTeI7UKF-Vw2bqxptZgAEuY_Q1GQcTNJ67uOfsOqVvEIv6mpNUSvEA8EcwXI-cBsbzRVYO-t0koqSg">
-<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-md font-label-sm text-label-sm text-primary font-semibold">
-              이천역 택시 5분
-            </div>
-</div>
-<div class="p-5">
-<div class="flex items-center gap-2 mb-1.5">
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-primary">전통 다도</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">경기 이천시 중리동</span>
-</div>
-<h3 class="font-title-lg text-title-lg text-on-surface font-bold">다원 온기</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2 line-clamp-2">
-              이천 도자기에 내어주는 발효 황차와 덖음 말차를 마시며 여독을 푸는 찻집.
-            </p>
-</div>
-</div>
-<div class="p-5 pt-0 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
-<span class="">코스 내 이동시간: 택시 5분</span>
-<span class="text-primary font-semibold">오후 19:30 마감</span>
-</div>
-</div>
-<!-- CARD 4: RESTAURANT -->
-<div class="explore-card hidden bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow" data-category="restaurant">
-<div>
-<div class="relative h-48 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Korean royal rice table dolsot bibimbap and side dishes presented in earthen ceramic vessels, rich golden rice crust, warm studio lighting with earth tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUCRfZHsl39r_pbzyPQ4HfAYAHQUOCHHX37dCHuxP6gltB1My7NES5oJNm5jVeXQpIBRLc_mml-yzSe4ar-Z3ok3TtAXExv7MvEdlGauFIguETTWQZGqv2tVxCBhpMwDMsEfP2GY5mTFzWWVyJxizk0z7QxGXOOckwBRg_0pt1rW5ScDSypZnnM5Z_0Or-2bArw7zaJfb15V5qhNgQNrd40WjxO6EVhOXOhVZM3KoBZb2hOylx4FlrwQ">
-<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-md font-label-sm text-label-sm text-secondary font-semibold">
-              설봉공원 도보 10분
-            </div>
-</div>
-<div class="p-5">
-<div class="flex items-center gap-2 mb-1.5">
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary">한정식</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">경기 이천시 사음동</span>
-</div>
-<h3 class="font-title-lg text-title-lg text-on-surface font-bold">나랏님 이천쌀밥</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2 line-clamp-2">
-              돌솥에 갓 지은 윤기 나는 이천 쌀밥과 16가지 계절 찬류의 정석 한상.
-            </p>
-</div>
-</div>
-<div class="p-5 pt-0 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
-<span class="">코스 내 이동시간: 택시 6분</span>
-<span class="text-secondary font-semibold">브레이크타임 없음</span>
-</div>
-</div>
-<!-- CARD 5: RESTAURANT -->
-<div class="explore-card hidden bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow" data-category="restaurant">
-<div>
-<div class="relative h-48 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Traditional handmade buckwheat cold noodles and savory mung bean pancake on ceramic platter, delicate plating, authentic Korean countryside restaurant." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYdauLRpUMfBMDLLBzLDRwtOMSpIc64fYH2qEeeVmwmIFleULq8RQSzwbLYLfHq7rQyS1zJ8M_lLJwpSpEzaHKaf1YbpMI3XMFkV9mM0-PbPeLFCLtC1sL6g943iCVLboIfgRwjAkCj944kN8v9nyxUVhh9kJ933GCMNM_kz3rE1BRBaK8Qhm-vf81sNKWpkMEn9lqZ8V6pQ5R42dCiiwLvcNiV3aOPhpwyW2uneR4tiaN_Me2dY5OeA">
-<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-md font-label-sm text-label-sm text-secondary font-semibold">
-              초원산방 인근 도보 15분
-            </div>
-</div>
-<div class="p-5">
-<div class="flex items-center gap-2 mb-1.5">
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary">자가제면</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">경기 이천시 관고동</span>
-</div>
-<h3 class="font-title-lg text-title-lg text-on-surface font-bold">설봉 막국수</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2 line-clamp-2">
-              직접 뽑은 메밀면과 깊은 동치미 육수가 돋보이는 뚜벅이 로컬 맛집.
-            </p>
-</div>
-</div>
-<div class="p-5 pt-0 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
-<span class="">코스 내 이동시간: 도보 15분</span>
-<span class="text-secondary font-semibold">재료소진 시 마감</span>
-</div>
-</div>
-<!-- CARD 6: STAY -->
-<div class="explore-card hidden bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow" data-category="stay">
-<div>
-<div class="relative h-48 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Cozy Korean modern hanok stay bedroom with linen bedding, wooden pillars, paper window screen, gentle ambient warm lighting, serene countryside view." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN8BmEzRrI7RX6SVD4oH9LkHVUr5speyuQy5mcj8bfm73sUSQjt1xfreYvY9T_40iON_Evo6rhr0cR4s19fX5nLhnc4zMllKuTvOZRTj32hZbKNQ8xeAiX1SEOCEBgCrZJXr1h244yCsmwQUSZNwvA_OEg5eh_K6H9tXUgMDn7jX-4y2JjBSsUYi0eJrBV_rEHHHWRL-o01fSzn6mw6TTY_IGDiQ0V6994rLV-MlBfIUEK12z4zfLpWw">
-<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-md font-label-sm text-label-sm text-tertiary font-semibold">
-              이천역 택시 10분
-            </div>
-</div>
-<div class="p-5">
-<div class="flex items-center gap-2 mb-1.5">
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-tertiary">감성 한옥스테이</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">경기 이천시 신둔면</span>
-</div>
-<h3 class="font-title-lg text-title-lg text-on-surface font-bold">도예가의 숲 민박</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2 line-clamp-2">
-              당일치기로 아쉬울 때, 도자기 장인의 작업실 곁에서 조용히 머무는 쉼터.
-            </p>
-</div>
-</div>
-<div class="p-5 pt-0 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
-<span class="">1박 참고용 큐레이션</span>
-<span class="text-tertiary font-semibold">사전예약 전용</span>
-</div>
-</div>
-<!-- CARD 7: STAY -->
-<div class="explore-card hidden bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow" data-category="stay">
-<div>
-<div class="relative h-48 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Refined hot spring spa hotel interior with cedar bath and steam, mineral water reflection, minimalist luxury wellness retreat in South Korea." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-dQthXtqESIg1Sk2wRLHVCjfcqbtEggz1Ri93CUg2_Kyl7-fBr9m8G0E4mOxpuuuwz2eYDZxAuGbGCjfrpcbjvugfBrkTbUUOrxN43xEA9sgCKAu_ANq-kisl8QerN6DeZ7mXcK-pSTpTHA4ASIyLTFFROYwU6ZAABaIRfrV5QL_Bk5nmYA7F1FH3Zc3JP0LiNo7eprm1teowjsnlD9bAZJO2-OU5x90_C9iQpOXfFQeOsxTS8UPx8w">
-<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-md font-label-sm text-label-sm text-tertiary font-semibold">
-              이천터미널 택시 12분
-            </div>
-</div>
-<div class="p-5">
-<div class="flex items-center gap-2 mb-1.5">
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-tertiary">온천 리조트</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">경기 이천시 안흥동</span>
-</div>
-<h3 class="font-title-lg text-title-lg text-on-surface font-bold">이천 미란다 &amp; 스파플러스</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2 line-clamp-2">
-              걸음 수가 많았던 하루의 근육 피로를 천연 게르마늄 온천수로 달래는 호텔.
-            </p>
-</div>
-</div>
-<div class="p-5 pt-0 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
-<span class="">1박 참고용 큐레이션</span>
-<span class="text-tertiary font-semibold">온천 사우나 포함</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Interactive Logic for Segment Tabs and Exploration Filter -->
-<script>
-    (function () {
-      const routes = {
-        overview: '../1/code.html',
-        'courses-compare': '../2/code.html',
-        'itinerary-timeline': '../3/code.html#timeline-root',
-        'spot-detail': '../4_so/code.html'
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-media">
+        <img alt="설봉호수와 산책로의 푸른 풍경" src="../../assets/stitch-selection/03-course-02/seolbong-main.jpg">
+        <span class="hero-photo-note">현장답사 실사 · 설봉호수</span>
+      </div>
+      <div class="hero-copy">
+        <span class="eyebrow"><span aria-hidden="true" class="material-symbols-outlined">landscape</span> COURSE 02 · LAKE &amp; ART WALK</span>
+        <h1>2코스 · 이천을 알차게</h1>
+        <p class="hero-description">설봉호수 산책과 박물관·미술관 관람, 품격 있는 점심 식사와 로컬 베이커리까지 하루에 아우르는 문화·자연 코스입니다.</p>
+        <div class="metric-row">
+          <div class="metric"><small>총 체류</small><strong>약 9시간 30분</strong></div>
+          <div class="metric"><small>이동 난이도</small><strong>★★☆ 보통</strong></div>
+          <div class="metric"><small>예상 택시비</small><strong>약 19,400<br><span class="metric-value-line">~21,400원</span></strong></div>
+        </div>
+        <nav aria-label="코스별 타임라인" class="course-switcher">
+          <a href="../3_course_1/code.html">1코스</a>
+          <a aria-current="page" href="../3/code.html">2코스</a>
+          <a href="../3_course_3/code.html">3코스</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="summary-section" aria-labelledby="summary-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="summary-title">동선 요약 &amp; 출발 전 체크</h2>
+          <p>설봉공원 권역을 여유 있게 둘러보고 식사와 카페로 이어가는 정확한 시간표입니다.</p>
+        </div>
+      </div>
+      <div class="summary-grid">
+        <article class="summary-card">
+          <span aria-hidden="true" class="material-symbols-outlined">park</span>
+          <h3>설봉공원 권역 2시간 30분</h3>
+          <p>호수 산책로, 시립박물관, 월전미술관, 국제조각공원과 토락교실을 하나의 권역으로 둘러봅니다.</p>
+        </article>
+        <article class="summary-card">
+          <span aria-hidden="true" class="material-symbols-outlined">route</span>
+          <h3>택시 + 짧은 도보</h3>
+          <p>긴 구간은 택시를 이용하고, 초원산방에서 베이커리을는 약 8분·379m를 걸어 이동합니다.</p>
+        </article>
+        <article class="summary-card">
+          <span aria-hidden="true" class="material-symbols-outlined">directions_bus</span>
+          <h3>버스 선택 시 배차 확인</h3>
+          <p>구간별 버스 배차간격은 약 20~40분입니다. 대기 시간을 줄이려면 출발 전 실시간 도착 정보를 확인하세요.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="timeline-section" id="timeline" aria-labelledby="timeline-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="timeline-title">2코스 시간순 이동 타임라인</h2>
+          <p>이천역 또는 이천종합터미널 도착부터 귀가까지 현장답사 기록에 따라 구성한 일정입니다.</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <time class="timeline-time">09:30</time><span class="timeline-dot"></span>
+          <div class="timeline-card"><div class="timeline-card-inner no-media"><div class="timeline-content">
+            <h3>이천역 또는 이천종합터미널 도착</h3>
+            <p>설봉공원으로 바로 이동합니다. 빠른 이동은 택시, 비용을 줄이려면 버스와 도보를 조합할 수 있습니다.</p>
+            <div class="route-meta"><span><span aria-hidden="true" class="material-symbols-outlined">local_taxi</span>택시 약 6분 · 2.5km · 5,400원</span><span>버스+도보 약 32분</span></div>
+          </div></div></div>
+        </article>
+
+        <article class="timeline-item">
+          <time class="timeline-time">10:00~12:30</time><span class="timeline-dot"></span>
+          <div class="timeline-card"><div class="timeline-card-inner"><div class="timeline-content">
+            <h3>설봉공원 권역 산책과 관람</h3>
+            <p>설봉호수 산책로를 걸은 뒤 이천시립박물관과 이천시립월전미술관을 관람합니다. 남는 시간에는 국제조각공원과 토락교실을 선택해 둘러보세요.</p>
+            <div class="route-meta"><span><span aria-hidden="true" class="material-symbols-outlined">directions_walk</span>평지 산책 중심</span><span>관람시간·휴관일 확인</span></div>
+          </div><div class="photo-pair"><img alt="설봉호수 수변 산책로" src="../../assets/stitch-selection/03-course-02/seolbong-walkway.jpg"><img alt="이천시립월전미술관 외관" src="../../assets/stitch-selection/03-course-02/museum-exterior.jpg"></div></div></div>
+        </article>
+
+        <article class="timeline-item">
+          <time class="timeline-time">12:30</time><span class="timeline-dot"></span>
+          <div class="timeline-card"><div class="timeline-card-inner no-media"><div class="timeline-content">
+            <h3>설봉공원 출발 · 초원산방으로 이동</h3>
+            <p>택시는 가장 간단하며, 버스를 이용할 경우 설봉공원삼거리 정류장까지 도보 이동이 필요합니다.</p>
+            <div class="route-meta"><span><span aria-hidden="true" class="material-symbols-outlined">local_taxi</span>택시 약 12분 · 4.8km · 9,000원</span><span>버스+도보 약 31분</span><span>배차 약 30~40분</span></div>
+          </div></div></div>
+        </article>
+
+        <article class="timeline-item">
+          <time class="timeline-time">13:40~16:00</time><span class="timeline-dot"></span>
+          <div class="timeline-card"><div class="timeline-card-inner"><div class="timeline-content">
+            <h3>초원산방 점심과 휴식</h3>
+            <p>숨불 향과 함께 정갈한 한상을 여유 있게 즐깁니다. 식사와 휴식 시간을 넉넉하게 잡아 오후 일정의 피로를 줄입니다.</p>
+            <div class="route-meta"><span><span aria-hidden="true" class="material-symbols-outlined">restaurant</span>점심 식사</span><span>주말 대기 고려</span></div>
+          </div><div class="photo-pair"><img alt="초원산방 숲불구이와 반찬 한상" src="../../assets/stitch-selection/03-course-02/chowonsanbang-meal.jpg"><img alt="초원산방 실내" src="../../assets/stitch-selection/03-course-02/chowonsanbang-interior.jpg"></div></div></div>
+        </article>
+
+        <article class="timeline-item">
+          <time class="timeline-time">16:00~16:10</time><span class="timeline-dot"></span>
+          <div class="timeline-card"><div class="timeline-card-inner no-media"><div class="timeline-content">
+            <h3>베이커리을로 걸어가기</h3>
+            <p>초원산방에서 베이커리을까지 짧은 평지 구간을 걸어 이동합니다.</p>
+            <div class="route-meta"><span><span aria-hidden="true" class="material-symbols-outlined">directions_walk</span>도보 약 8분 · 379m</span></div>
+          </div></div></div>
+        </article>
+
+        <article class="timeline-item">
+          <time class="timeline-time">16:10~18:00</time><span class="timeline-dot"></span>
+          <div class="timeline-card"><div class="timeline-card-inner"><div class="timeline-content">
+            <h3>베이커리을 카페 시간</h3>
+            <p>넓은 베이커리 공간에서 도쿄식빵 등 시그니처 빵과 음료를 즐기며 일정을 마무리합니다.</p>
+            <div class="route-meta"><span><span aria-hidden="true" class="material-symbols-outlined">bakery_dining</span>베이커리·카페</span><span>귀가 전 휴식</span></div>
+          </div><div class="photo-pair"><img alt="베이커리을 외관" src="../../assets/stitch-selection/03-course-02/eulreul-exterior.jpg"><img alt="베이커리을 도쿄식빵" src="../../assets/stitch-selection/03-course-02/eulreul-tokyo-bread.jpg"></div></div></div>
+        </article>
+
+        <article class="timeline-item">
+          <time class="timeline-time">18:00~19:00</time><span class="timeline-dot"></span>
+          <div class="timeline-card"><div class="timeline-card-inner no-media"><div class="timeline-content">
+            <h3>이천역 또는 종합터미널로 복귀</h3>
+            <p>택시, 버스 또는 도보 중 귀가 시간에 맞는 방법을 선택합니다. 오후 6~7시는 호출과 교통 상황을 고려해 여유 있게 출발하세요.</p>
+            <div class="route-meta"><span><span aria-hidden="true" class="material-symbols-outlined">local_taxi</span>택시 약 6~9분 · 5,000~7,000원</span><span>버스 약 26분</span><span>도보 약 29분</span></div>
+          </div></div></div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="travel-note">
+      <span aria-hidden="true" class="material-symbols-outlined">tips_and_updates</span>
+      <div><strong>뚜벅이 팁</strong>택시 예상 합계는 약 19,400~21,400원이며 교통 상황과 호출 방식에 따라 달라질 수 있습니다. 버스를 선택하면 비용은 줄지만 배차 대기로 일정이 길어질 수 있습니다.</div>
+    </aside>
+
+    <div class="page-actions">
+      <a class="primary-link" href="../4_course_2/code.html"><span aria-hidden="true" class="material-symbols-outlined">place</span>2코스 장소 자세히 보기</a>
+      <a class="secondary-button" href="../2/code.html"><span aria-hidden="true" class="material-symbols-outlined">arrow_back</span>3대 코스 비교로</a>
+      <button class="secondary-button" data-share type="button"><span aria-hidden="true" class="material-symbols-outlined">share</span>2코스 일정 공유</button>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><strong>요즘 이천 하루만에</strong><span>이천역·설봉공원 기준 · 현장답사 아카이브</span></div></footer>
+  <div aria-live="polite" class="toast" id="toast" role="status"></div>
+
+  <script>
+    (() => {
+      const toast = document.getElementById('toast');
+      let toastTimer;
+
+      const showToast = (message) => {
+        window.clearTimeout(toastTimer);
+        toast.textContent = message;
+        toast.classList.add('is-visible');
+        toastTimer = window.setTimeout(() => toast.classList.remove('is-visible'), 2200);
       };
 
-      document.querySelectorAll('a[data-path]').forEach((link) => {
-        const target = routes[link.getAttribute('data-path')];
-        if (target) link.href = target;
-      });
-
-      const localImageMap = {
-        '설봉호수 수변 산책 데크길': '../../assets/stitch-selection/03-course-02/seolbong-walkway.jpg',
-        '이천시립 월전미술관 전경': '../../assets/stitch-selection/03-course-02/museum-exterior.jpg',
-        '정갈한 숯불구이 & 반찬 한상': '../../assets/stitch-selection/03-course-02/chowonsanbang-meal.jpg',
-        '운치 있는 토속적 내부 분위기': '../../assets/stitch-selection/03-course-02/chowonsanbang-interior.jpg'
+      const copyUrl = async () => {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(window.location.href);
+          return;
+        }
+        const helper = document.createElement('textarea');
+        helper.value = window.location.href;
+        helper.style.position = 'fixed';
+        helper.style.opacity = '0';
+        document.body.appendChild(helper);
+        helper.select();
+        const copied = document.execCommand('copy');
+        helper.remove();
+        if (!copied) throw new Error('Copy failed');
       };
-      document.querySelectorAll('img[alt]').forEach((image) => {
-        const source = localImageMap[image.alt];
-        if (source) image.src = source;
-      });
 
-      // 1. Segment Taxi/Bus tab toggle
-      const tabBtns = document.querySelectorAll('.mode-tab-btn');
-      tabBtns.forEach(btn => {
-        btn.addEventListener('click', function () {
-          const target = this.getAttribute('data-target');
-          const tab = this.getAttribute('data-tab');
-
-          // Parent switch container
-          const parentGroup = this.parentElement;
-          parentGroup.querySelectorAll('.mode-tab-btn').forEach(b => {
-            b.classList.remove('active', 'bg-surface-container-lowest', 'text-primary', 'shadow-sm');
-            b.classList.add('text-on-surface-variant');
-          });
-
-          this.classList.add('active', 'bg-surface-container-lowest', 'text-primary', 'shadow-sm');
-          this.classList.remove('text-on-surface-variant');
-
-          // Toggle content panels
-          const taxiView = document.getElementById(target + '-taxi');
-          const busView = document.getElementById(target + '-bus');
-
-          if (tab === 'taxi') {
-            if (taxiView) taxiView.classList.remove('hidden');
-            if (busView) busView.classList.add('hidden');
-          } else {
-            if (taxiView) taxiView.classList.add('hidden');
-            if (busView) busView.classList.remove('hidden');
+      document.querySelectorAll('[data-share]').forEach((button) => {
+        button.addEventListener('click', async () => {
+          const data = { title: document.title, text: '이천을 알차게 2코스 일정을 확인해 보세요.', url: window.location.href };
+          if (navigator.share) {
+            try { await navigator.share(data); return; } catch (error) { if (error.name === 'AbortError') return; }
           }
-        });
-      });
-
-      // 2. Around Exploration Category Filter
-      const expBtns = document.querySelectorAll('.explore-tab-btn');
-      const cards = document.querySelectorAll('.explore-card');
-      const stayNotice = document.getElementById('stay-notice');
-
-      document.querySelectorAll('.explore-card[data-category="cafe"]').forEach((card) => {
-        const name = card.querySelector('h3')?.textContent?.trim();
-        if (!name) return;
-        const openNaverMap = () => window.open(
-          `https://map.naver.com/p/search/${encodeURIComponent(name + ' 이천')}`,
-          '_blank',
-          'noopener,noreferrer'
-        );
-        card.setAttribute('role', 'link');
-        card.setAttribute('tabindex', '0');
-        card.setAttribute('aria-label', `${name} 네이버 지도에서 보기`);
-        const linkHint = card.querySelector('.p-5.pt-0 span:last-child');
-        if (linkHint) linkHint.textContent = '네이버 지도 ↗';
-        card.addEventListener('click', openNaverMap);
-        card.addEventListener('keydown', (event) => {
-          if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            openNaverMap();
-          }
-        });
-      });
-
-      expBtns.forEach(btn => {
-        btn.addEventListener('click', function () {
-          expBtns.forEach(b => {
-            b.classList.remove('active', 'bg-surface-container-lowest', 'text-primary', 'shadow-sm');
-            b.classList.add('text-on-surface-variant');
-          });
-
-          this.classList.add('active', 'bg-surface-container-lowest', 'text-primary', 'shadow-sm');
-          this.classList.remove('text-on-surface-variant');
-
-          const category = this.getAttribute('data-category');
-
-          if (stayNotice) {
-            if (category === 'stay') {
-              stayNotice.classList.remove('hidden');
-            } else {
-              stayNotice.classList.add('hidden');
-            }
-          }
-
-          cards.forEach(card => {
-            if (card.getAttribute('data-category') === category) {
-              card.classList.remove('hidden');
-            } else {
-              card.classList.add('hidden');
-            }
-          });
+          try { await copyUrl(); showToast('일정 링크를 복사했습니다.'); }
+          catch (error) { showToast('링크를 복사하지 못했습니다.'); }
         });
       });
     })();
   </script>
-</div></div></main><footer class="w-full bg-surface-container-low"><div class="max-w-[1080px] mx-auto px-margin lg:px-margin-desktop py-space-xl flex flex-col md:flex-row md:items-center md:justify-between gap-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><span class="font-title-lg text-title-lg text-primary">요즘 이천 하루만에</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-fixed-variant">도보 &amp; 대중교통 아카이브</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">서울 강남·판교에서 경강선 타고 40분. 도자기 공방 골목, 쌀밥 한상, 설봉호수 석양까지 20대 뚜벅이를 위한 정갈한 당일치기 큐레이션 가이드.</p></div><div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-md text-on-surface-variant font-label-md text-label-md"><span class="">이천시 로컬 도자기&amp;문화 기행 안내</span><span class="hidden sm:inline text-outline-variant">•</span><span class="">경강선 이천역·신둔도예촌역 기준</span><span class="hidden sm:inline text-outline-variant">•</span><span class="text-on-surface-variant">© 2024 Icheon Daytrip Archive.</span></div></div></footer>
-
-</body></html>
+</body>
+</html>
