@@ -25,7 +25,7 @@
 </section>
 <!-- Main 3 Course Cards (Full Visual Mosaic Cards) -->
 <section class="px-margin lg:px-margin-desktop pb-space-xl">
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter-desktop items-stretch" id="course-grid">
+<div class="course-stack grid grid-cols-1 gap-gutter-desktop items-stretch" id="course-grid">
 <!-- COURSE 1: 이지 이천 -->
 <article class="course-card group flex flex-col bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_-2px_rgba(93,55,36,0.06)] hover:shadow-[0_12px_32px_-4px_rgba(93,55,36,0.12)] transition-all duration-300" data-category="starter">
 <!-- Photo Media Header -->
@@ -154,13 +154,13 @@
 <div class="flex items-center gap-space-xs flex-wrap font-label-md text-label-md text-on-surface">
 <span class="px-2 py-0.5 rounded bg-surface-container-high">이천역·터미널</span>
 <span class="text-outline-variant">→</span>
-<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-bold">설봉공원</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-bold">설봉공원·이천시립박물관·이천시립월전미술관·설봉국제조각공원·토락교실</span>
 <span class="text-outline-variant">→</span>
 <span class="px-2 py-0.5 rounded bg-surface-container-high">초원산방</span>
 <span class="text-outline-variant">→</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high">베이커리 을를</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high">베이커리을를</span>
 <span class="text-outline-variant">→</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high">귀가</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high">이천역</span>
 </div>
 </div>
 <!-- Experience Tags -->
@@ -222,10 +222,8 @@
 <span class="material-symbols-outlined text-[16px] text-primary">local_taxi</span>
                   예상 택시비
                 </span>
-<span class="font-title-lg text-title-lg text-outline font-semibold mt-0.5 flex items-center gap-1">
-<span class="">확인 필요</span>
-<span class="material-symbols-outlined text-[16px]" title="이천역 왕복 택시비는 경로에 따라 별도 확인 필요">info</span>
-</span>
+<span class="font-title-lg text-title-lg text-primary font-semibold mt-0.5">왕복 약 16,000~18,000원</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">예스파크 1주차장 하차 · 편도 9분 / 4.2km</span>
 </div>
 </div>
 <!-- Route Nodes -->
@@ -354,6 +352,155 @@
     document.querySelectorAll('img[alt]').forEach((image) => {
       const source = localImageMap[image.alt];
       if (source) image.src = source;
+    });
+
+    const extendCourseGallery = (category, title, photos) => {
+      const card = document.querySelector(`.course-card[data-category="${category}"]`);
+      const gallery = card?.querySelector('.grid.grid-cols-3');
+      if (!gallery) return;
+
+      gallery.classList.remove('grid-cols-3');
+      gallery.classList.add('course-gallery-grid');
+
+      const galleryHeading = gallery.previousElementSibling;
+      const galleryTitle = galleryHeading?.firstElementChild;
+      if (galleryTitle) {
+        galleryTitle.innerHTML = `<span class="material-symbols-outlined text-[16px] text-primary">photo_camera</span>${title}`;
+      }
+      if (galleryHeading?.lastElementChild) {
+        galleryHeading.lastElementChild.textContent = `${gallery.children.length + photos.length}컷`;
+      }
+
+      photos.forEach(({ src, alt, label, mainFit, mainBackground }) => {
+        const thumbnail = document.createElement('div');
+        thumbnail.className = 'group/thumb relative h-20 rounded-lg overflow-hidden bg-surface-container';
+
+        const image = document.createElement('img');
+        image.src = src;
+        image.alt = alt;
+        image.className = 'w-full h-full object-cover group-hover/thumb:scale-105 transition-transform duration-300';
+        if (mainFit) image.dataset.mainFit = mainFit;
+        if (mainBackground) image.dataset.mainBackground = mainBackground;
+
+        const shade = document.createElement('div');
+        shade.className = 'absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent';
+
+        const caption = document.createElement('span');
+        caption.className = 'absolute bottom-1 inset-x-0 text-center font-label-sm text-[11px] text-on-primary font-medium px-1 truncate';
+        caption.textContent = label;
+
+        thumbnail.append(image, shade, caption);
+        gallery.appendChild(thumbnail);
+      });
+    };
+
+    extendCourseGallery('starter', '현장 스케치 (들밥 + 이진상회)', [
+      {
+        src: '../../assets/stitch-selection/02-course-01/leejin-interior.jpg',
+        alt: '이진상회 유리 온실 공간',
+        label: '유리 온실 공간'
+      },
+      {
+        src: '../../assets/stitch-selection/02-course-01/leejin-bakery-kitchen.jpg',
+        alt: '이진상회 베이커리 작업실',
+        label: '베이커리 작업실'
+      }
+    ]);
+
+    extendCourseGallery('culture', '현장 스케치 (답사 실사 + 베이커리 을를)', [
+      {
+        src: '../../assets/stitch-selection/03-course-02/eulreul-exterior.jpg',
+        alt: '베이커리 을를 외관',
+        label: '을를 외관'
+      },
+      {
+        src: '../../assets/stitch-selection/03-course-02/eulreul-tokyo-bread.jpg',
+        alt: '베이커리 을를 도쿄식빵',
+        label: '도쿄식빵',
+        mainFit: 'contain',
+        mainBackground: '#111111'
+      }
+    ]);
+
+    extendCourseGallery('craft', '현장 공방 스케치 + 도예촌막국수', [
+      {
+        src: '../../assets/stitch-selection/04-course-03/pottery-village-noodles-exterior.jpg',
+        alt: '도예촌막국수 매장 외관',
+        label: '막국수 외관'
+      },
+      {
+        src: '../../assets/stitch-selection/04-course-03/pottery-village-noodles-interior.jpg',
+        alt: '도예촌막국수 매장 실내',
+        label: '막국수 실내'
+      }
+    ]);
+
+    const galleryImagesByCourse = {
+      starter: [
+        '강민주의 들밥 셀프 리필바',
+        '강민주의 들밥 매장 전경',
+        '강민주의 들밥 차림표 & 가격',
+        '이진상회 유리 온실 공간',
+        '이진상회 베이커리 작업실'
+      ],
+      culture: [
+        '설봉공원 산책로',
+        '월전미술관 전경',
+        '초원산방 숯불구이',
+        '베이커리 을를 외관',
+        '베이커리 을를 도쿄식빵'
+      ],
+      craft: [
+        '토토 공방 쇼룸',
+        '솔과흙 외관',
+        '라기환 백자',
+        '도예촌막국수 매장 외관',
+        '도예촌막국수 매장 실내'
+      ]
+    };
+
+    Object.entries(galleryImagesByCourse).forEach(([category, imageAlts]) => {
+      const card = document.querySelector(`.course-card[data-category="${category}"]`);
+      const mainImage = card?.querySelector('div.relative.w-full.h-64 > img');
+      if (!card || !mainImage) return;
+
+      const galleryItems = imageAlts.map((altText) => {
+        const image = Array.from(card.querySelectorAll('img[alt]'))
+          .find((candidate) => candidate.alt === altText);
+        return image ? { image, thumbnail: image.parentElement } : null;
+      }).filter(Boolean);
+
+      galleryItems.forEach(({ image: thumbnailImage, thumbnail }) => {
+
+        thumbnail.classList.add('gallery-thumbnail');
+        thumbnail.setAttribute('role', 'button');
+        thumbnail.setAttribute('tabindex', '0');
+        thumbnail.setAttribute('aria-label', `${thumbnailImage.alt} 사진을 메인으로 보기`);
+        thumbnail.setAttribute('aria-pressed', 'false');
+
+        const showAsMainImage = () => {
+          mainImage.src = thumbnailImage.getAttribute('src');
+          mainImage.alt = thumbnailImage.alt;
+          mainImage.style.objectFit = thumbnailImage.dataset.mainFit || 'cover';
+          mainImage.style.backgroundColor = thumbnailImage.dataset.mainBackground || '';
+
+          galleryItems.forEach(({ thumbnail: galleryThumbnail }) => {
+            galleryThumbnail.classList.remove('is-active');
+            galleryThumbnail.setAttribute('aria-pressed', 'false');
+          });
+
+          thumbnail.classList.add('is-active');
+          thumbnail.setAttribute('aria-pressed', 'true');
+        };
+
+        thumbnail.addEventListener('click', showAsMainImage);
+        thumbnail.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            showAsMainImage();
+          }
+        });
+      });
     });
 
     filterButtons.forEach(btn => {
