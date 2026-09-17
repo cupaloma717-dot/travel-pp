@@ -519,6 +519,39 @@ main.page-shell > section {
   font-weight: 700;
 }
 
+.timeline-map-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.85rem;
+}
+
+.timeline-map-link {
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.32rem;
+  padding: 0 0.72rem;
+  border: 1px solid rgba(3, 199, 90, 0.3);
+  border-radius: 999px;
+  background: rgba(3, 199, 90, 0.06);
+  color: #08733a;
+  font-size: 0.74rem;
+  font-weight: 900;
+  transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+
+.timeline-map-link:hover {
+  border-color: #03c75a;
+  background: rgba(3, 199, 90, 0.11);
+  transform: translateY(-1px);
+}
+
+.timeline-map-link .material-symbols-outlined {
+  font-size: 1rem;
+}
+
 .timeline-photo {
   min-height: 15rem;
   background: var(--timeline-soft);
